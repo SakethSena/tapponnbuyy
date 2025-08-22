@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from 'react'
-import './Navbar.css'
+import './NavBar.css'
 import { Link } from 'react-router-dom'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
