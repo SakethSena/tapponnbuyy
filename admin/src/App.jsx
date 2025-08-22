@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
-import Navbar from "./Components/NavBar/NavBar";
+import NavBar from "./Components/NavBar/NavBar";
 import Admin from "./Pages/Admin";
 
 export const backend_url = 'http://localhost:4000';
@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Navbar />
+        <NavBar />
         <Admin />
         <Footer />
       </div>
