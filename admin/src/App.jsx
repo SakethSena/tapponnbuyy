@@ -3,7 +3,7 @@ import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar/NavBar";
 import Admin from "./Pages/Admin";
 
-export const backend_url = 'http://localhost:4000';
+export const backend_url = 'https://tapponnbuyy.onrender.com/';
 export const currency = '$';
 
 function App() {
