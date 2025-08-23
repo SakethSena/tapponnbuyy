@@ -1,4 +1,3 @@
-require("dotenv").config()
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -6,6 +5,7 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
+const port = process.env.PORT || 4000;
 
 
 app.use(express.json());
@@ -242,7 +242,7 @@ app.post("/removeproduct", async (req, res) => {
 });
 
 // Starting Express Server
-app.listen(process.env.PORT, (error) => {
-  if (!error) console.log("Server Running on port " + process.env.PORT);
+app.listen(port, (error) => {
+  if (!error) console.log("Server Running on port " +  port);
   else console.log("Error : ", error);
 });
