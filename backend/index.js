@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect("mongodb+srv://sakethsenapathiind:Qwertyuiop1234@cluster0.onv0d8v.mongodb.net/");
+mongoose.connect("mongodb+srv://sakethsenapathiind:Qwertyuiop1234@cluster0.onv0d8v.mongodb.net/mydb?retryWrites=true&w=majority&tls=true");
 
 // paste your mongoDB Connection string above with password
 // password should not contain '@' special character
