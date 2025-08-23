@@ -243,6 +243,6 @@ app.post("/removeproduct", async (req, res) => {
 
 // Starting Express Server
 app.listen(process.env.PORT, (error) => {
-  if (!error) console.log("Server Running on port " + port);
+  if (!error) console.log("Server Running on port " + process.env.PORT);
   else console.log("Error : ", error);
 });
