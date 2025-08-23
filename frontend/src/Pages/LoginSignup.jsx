@@ -12,7 +12,7 @@ const LoginSignup = () => {
 
   const login = async () => {
     let dataObj;
-    await fetch('https://tapponnbuyy.onrender.com//login', {
+    await fetch('https://tapponnbuyy-xiqb.vercel.app/', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -35,7 +35,7 @@ const LoginSignup = () => {
 
   const signup = async () => {
     let dataObj;
-    await fetch('https://tapponnbuyy.onrender.com/signup', {
+    await fetch('https://tapponnbuyy-xiqb.vercel.app/signup', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',

@@ -9,7 +9,7 @@ const ShopCategory = (props) => {
   const [allproducts, setAllProducts] = useState([]);
 
   const fetchInfo = () => { 
-    fetch('https://tapponnbuyy.onrender.com/allproducts') 
+    fetch('https://tapponnbuyy-xiqb.vercel.app/allproducts') 
             .then((res) => res.json()) 
             .then((data) => setAllProducts(data))
     }

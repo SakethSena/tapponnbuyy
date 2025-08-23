@@ -11,10 +11,10 @@ const Shop = () => {
   const [newcollection, setNewCollection] = useState([]);
 
   const fetchInfo = () => { 
-    fetch('https://tapponnbuyy.onrender.com/popularinwomen') 
+    fetch('https://tapponnbuyy-xiqb.vercel.app/popularinwomen') 
             .then((res) => res.json()) 
             .then((data) => setPopular(data))
-    fetch('https://tapponnbuyy.onrender.com/newcollections') 
+    fetch('https://tapponnbuyy-xiqb.vercel.app/newcollections') 
             .then((res) => res.json()) 
             .then((data) => setNewCollection(data))
     }
