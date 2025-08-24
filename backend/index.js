@@ -12,10 +12,17 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect("mongodb+srv://sakethsenapathiind:Qwertyuiop1234@cluster0.onv0d8v.mongodb.net/");
 
-// paste your mongoDB Connection string above with password
-// password should not contain '@' special character
+mongoose.connect(
+  "mongodb+srv://sakethsenapathiind:Qwertyuiop1234@cluster0.onv0d8v.mongodb.net/backend?retryWrites=true&w=majority&ssl=true",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    tls: true,
+    tlsAllowInvalidCertificates: false,
+  }
+);
+
 
 
 //Image Storage Engine 
