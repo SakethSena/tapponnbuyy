@@ -12,7 +12,7 @@ const LoginSignup = () => {
 
   const login = async () => {
     let dataObj;
-    await fetch('https://taptobuyy.onrender.com/login', {
+    await fetch('https://quickbuynow.onrender.com/login', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -35,7 +35,7 @@ const LoginSignup = () => {
 
   const signup = async () => {
     let dataObj;
-    await fetch('https://taptobuyy.onrender.com/signup', {
+    await fetch('https://localhost:4000/signup', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',

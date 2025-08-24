@@ -9,7 +9,7 @@ const ShopCategory = (props) => {
   const [allproducts, setAllProducts] = useState([]);
 
   const fetchInfo = () => { 
-    fetch('https://taptobuyy.onrender.com/allproducts') 
+    fetch('https://quickbuynow.onrender.com/allproducts') 
             .then((res) => res.json()) 
             .then((data) => setAllProducts(data))
     }

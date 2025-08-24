@@ -11,10 +11,10 @@ const Shop = () => {
   const [newcollection, setNewCollection] = useState([]);
 
   const fetchInfo = () => { 
-    fetch('https://taptobuyy.onrender.com/popularinwomen') 
+    fetch('https://quickbuynow.onrender.com/popularinwomen') 
             .then((res) => res.json()) 
             .then((data) => setPopular(data))
-    fetch('https://taptobuyy.onrender.com/newcollections') 
+    fetch('https://quickbuynow.onrender.com/newcollections') 
             .then((res) => res.json()) 
             .then((data) => setNewCollection(data))
     }
