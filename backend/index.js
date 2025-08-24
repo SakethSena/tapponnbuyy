@@ -13,8 +13,7 @@ app.use(cors());
 
 // Database Connection With MongoDB
 
-mongoose.connect(
-  "mongodb+srv://sakethsenapathiind:Qwertyuiop1234@cluster0.onv0d8v.mongodb.net/backend?retryWrites=true&w=majority&ssl=true",
+mongoose.connect("mongodb+srv://sakethsenapathiind:Qwertyuiop1234@cluster0.onv0d8v.mongodb.net/backend?retryWrites=true&w=majority&ssl=true",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
