@@ -11,10 +11,10 @@ const Shop = () => {
   const [newcollection, setNewCollection] = useState([]);
 
   const fetchInfo = () => { 
-    fetch('https://quickbuynow.onrender.com/popularinwomen') 
+    fetch('https://quickbuyybackend.vercel.app/popularinwomen') 
             .then((res) => res.json()) 
             .then((data) => setPopular(data))
-    fetch('https://quickbuynow.onrender.com/newcollections') 
+    fetch('https://quickbuyybackend.vercel.app/newcollections') 
             .then((res) => res.json()) 
             .then((data) => setNewCollection(data))
     }

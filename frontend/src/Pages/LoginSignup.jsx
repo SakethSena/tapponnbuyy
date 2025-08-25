@@ -12,7 +12,7 @@ const LoginSignup = () => {
 
   const login = async () => {
     let dataObj;
-    await fetch('https://quickbuynow.onrender.com/login', {
+    await fetch('https://quickbuyybackend.vercel.app/login', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -35,7 +35,7 @@ const LoginSignup = () => {
 
   const signup = async () => {
     let dataObj;
-    await fetch('https://localhost:4000/signup', {
+    await fetch('https://quickbuyybackend.vercel.app/signup', {
       method: 'POST',
       headers: {
         Accept:'application/form-data',
